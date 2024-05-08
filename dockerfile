@@ -1,5 +1,5 @@
 # Use the official Nginx image as base image
-FROM alpine:3.19
+FROM nginx:latest
 
 # Copy the HTML files to the Nginx default html directory
 COPY finally.html /usr/share/nginx/html/
@@ -17,4 +17,4 @@ RUN chmod 644 /usr/share/nginx/html/finally.html && \
     chmod 644 /usr/share/nginx/html/style.css
 
 # Start Nginx when the container launches
-CMD ["alpine", "-g", "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
