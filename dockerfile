@@ -1,5 +1,5 @@
 # Use the official Nginx image as base image
-FROM nginx:latest
+FROM prashantritgit/valentine:tagname:v1
 
 # Copy the HTML files to the Nginx default html directory
 COPY finally.html /usr/share/nginx/html/
