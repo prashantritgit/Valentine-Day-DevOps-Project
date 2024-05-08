@@ -17,4 +17,4 @@ RUN chmod 644 /usr/share/nginx/html/finally.html && \
     chmod 644 /usr/share/nginx/html/style.css
 
 # Start Nginx when the container launches
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["alpine", "-g", "daemon off;"]
